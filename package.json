@@ -6,8 +6,8 @@
   "private": true,
   "license": "UNLICENSED",
   "scripts": {
-    "db:dev:rm": "docker compose rm mongodb_container -s -f -v",
-    "db:dev:up": "docker compose up mongodb_container -d",
+    "db:dev:rm": "sudo docker compose rm mongodb_container -s -f -v",
+    "db:dev:up": "sudo docker compose up mongodb_container -d",
     "db:dev:restart":"yarn db:dev:rm && yarn db:dev:up",
     "prebuild": "rimraf dist",
     "build": "nest build",
